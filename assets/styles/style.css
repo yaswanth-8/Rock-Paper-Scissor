@@ -29,6 +29,9 @@ body{
     }
   }
 
+  .display{
+    display: none;
+  }
 
   h1 {
     color: rgb(222, 226, 228);

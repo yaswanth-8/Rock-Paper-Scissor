@@ -2,6 +2,9 @@ const choices = document.querySelectorAll('.choices button');
 const result = document.getElementById('result');
 var playerChoiceElement = document.getElementById("player-choice");
 var ComputerChoiceElement = document.getElementById("computer-choice");
+var showImageButton = document.getElementById('show-image-button');
+var playerChoiceImage = document.getElementById('player-choice');
+var CPUChoiceImage = document.getElementById('computer-choice');
 
 let playerScore = 0;
 let computerScore = 0;
@@ -51,3 +54,9 @@ function showResult(playerChoice, computerChoice, winner) {
     <p>Computer: ${computerScore}</p>
   `;
 }
+
+showImageButton.addEventListener('click', function() {
+  showImageButton.style.display='none';
+  playerChoiceImage.classList.remove('display');
+  CPUChoiceImage.classList.remove('display');
+});
