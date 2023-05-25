@@ -1,0 +1,40 @@
+body{
+    background: url('https://media.istockphoto.com/id/1097781196/vector/the-game-of-rock-paper-scissors.jpg?s=170667a&w=0&k=20&c=OoBjHWPUX-0vNZ2Ye7DWIbVYTQY42RmSeGP5qb70hjw=');
+}
+.card-container {
+    width: 75%;
+    margin: 70px auto;
+    background-color: rgba(56, 53, 53, 0.904);
+    border-radius: 20px;
+  }
+  
+  #result {
+    text-align: center;
+  }
+
+  img {
+    height: 300px;
+    width: 200px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+    animation: zoom-in 1s ease-in-out infinite alternate;
+  }
+
+  @keyframes zoom-in {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.01);
+    }
+  }
+
+
+  h1 {
+    color: rgb(222, 226, 228);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+
+  button:hover{
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+  }
