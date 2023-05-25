@@ -18,6 +18,8 @@ function playGame(e) {
   playerChoiceElement.src=`./assets/images/${playerChoice}.jpg`;
   const computerChoice = getComputerChoice();
   ComputerChoiceElement.src= `./assets/images/${computerChoice}.jpg`
+  playerChoiceImage.classList.remove('display');
+  CPUChoiceImage.classList.remove('display');
   const winner = getWinner(playerChoice, computerChoice);
 
   showResult(playerChoice, computerChoice, winner);
@@ -57,6 +59,5 @@ function showResult(playerChoice, computerChoice, winner) {
 
 showImageButton.addEventListener('click', function() {
   showImageButton.style.display='none';
-  playerChoiceImage.classList.remove('display');
-  CPUChoiceImage.classList.remove('display');
+  
 });
